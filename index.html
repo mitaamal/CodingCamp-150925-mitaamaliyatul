@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- CSS External -->
-    <link rel="stylesheet" href="css\style.css">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
 <body>
-    
-    <!-- JS External -->
-    <script src="js\script.js"></script>
-</body>
+    <div class="todo-container">
+        <header>
+            <h1>Todo List</h1>
+        </header>
 
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a todo...">
+            <input type="date" id="todo-date">
+            <button type="submit" class="add-btn">+</button>
+        </form>
+
+        <div class="filter-section">
+            <button id="filter-btn" class="filter-btn">Filter</button>
+            <button id="delete-all-btn" class="delete-all-btn">Delete All</button>
+        </div>
+
+        <div class="todo-list-container">
+            <div class="list-header">
+                <div class="header-task">Task</div>
+                <div class="header-date">Due Date</div>
+                <div class="header-status">Status</div>
+                <div class="header-actions">Actions / Notes</div> 
+            </div>
+            <div id="todo-list">
+                </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
